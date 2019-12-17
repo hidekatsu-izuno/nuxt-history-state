@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "description": "Nuxt.js module to store history states",
   "main": "./lib/module.js",
-  "types": "./lib/module.d.ts",
-  "directories": {
-    "lib": "lib"
-  },
+  "types": "./types/module.d.ts",
+  "files": [
+    "lib",
+    "types/*.d.ts"
+  ],
   "scripts": {
-    "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,8 +22,6 @@
   },
   "homepage": "https://github.com/hidekatsu-izuno/nuxt-history-state#readme",
   "devDependencies": {
-    "rollup": "^1.27.13",
-    "rollup-plugin-typescript2": "^0.25.3",
-    "typescript": "^3.7.3"
+    "nuxt-edge": "latest"
   }
 }
