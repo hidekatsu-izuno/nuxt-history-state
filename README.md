@@ -8,6 +8,9 @@ Nuxt.js module to backup or restore historical states
 
 ## Features
 
+- Get a last state when going forward or back.
+- Restore a state when reloading. (optional)
+
 ## Install
 
 Using npm:
@@ -41,8 +44,8 @@ module.exports = {
 Indicates if history state can e seved or not.
 
 This module doesn't support reloading by default. If you set this option to true, 
-the history state is saved in window.sessionStore and is restored from there when
-reloading. However this feature adds url query to _p parameter in return for it.
+the state is saved in window.sessionStore and is restored from there when reloading. 
+However this module adds a parameter *_p* to url in return for it.
 
 *Default:* false
 
@@ -93,9 +96,9 @@ export default {
 
 #### action
 
-A navigated action type.
+A action type that caused a navigation.
 
-- new: When a new page is displayed.
+- new: When a new page is opened.
 - reload: When a page is reloaded.
 - push: When a pushState is called.
 - forward: When a forward navigation is occurred.
@@ -113,18 +116,21 @@ A backup data.
 
 A history length.
 
-#### get(page)
+#### getLocation(page)
+
+You can get a location of the specified page.
+
+#### getData(page)
 
 You can get a history state in the specified page.
-This method returns a object that has location and data properties.
 
 #### find(location)
 
-You can find a relative position from a current page of the matched location.
+You can get the index of the first matched history, searching backward starting at the current page.
 If a history state is not found, this method will return null.
 
 ```javascript
-const pos = this.$historyState.find({
+const delta = this.$historyState.find({
     name: 'test'
     // path: ...
     // fullPath: ...
@@ -133,8 +139,8 @@ const pos = this.$historyState.find({
     // params: ...
     // meta: ...
 });
-if (pos != null) {
-    this.$router.go(pos);
+if (delta != null) {
+    this.$router.go(delta);
 }
 ```
 
