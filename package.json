@@ -1,6 +1,6 @@
 {
   "name": "nuxt-history-state",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Nuxt.js module to store history states",
   "main": "./lib/module.js",
   "types": "./types/module.d.ts",
@@ -9,7 +9,8 @@
     "types/*.d.ts"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,10 @@
   },
   "homepage": "https://github.com/hidekatsu-izuno/nuxt-history-state#readme",
   "devDependencies": {
-    "nuxt-edge": "latest"
+    "nuxt-edge": "latest",
+    "standard-version": "^7.0.1"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.15"
   }
 }
