@@ -1,4 +1,5 @@
-interface NuxtHistoryStateRoute {
+
+interface NuxtHistoryStateLocation {
     path: string;
     name?: string;
     hash: string;
@@ -8,7 +9,12 @@ interface NuxtHistoryStateRoute {
     meta?: any;
 }
 
-interface NuxtHistoryStateRouteOption {
+interface NuxtHistoryItem {
+    location: NuxtHistoryStateLocation;
+    data?: any;
+}
+
+interface NuxtHistoryStateLocationOption {
     path?: string;
     name?: string;
     hash?: string;
@@ -21,10 +27,12 @@ interface NuxtHistoryStateRouteOption {
 interface NuxtHistoryStateInstance {
     readonly action: string;
     readonly page: number;
-    readonly route: NuxtHistoryStateRoute;
     readonly data: any;
+    readonly length: number;
+    
+    getItem(page: number): NuxtHistoryItem?;
 
-    backIndexOf(route: NuxtHistoryStateRouteOption): number?;
+    findBackPosition(route: NuxtHistoryStateLocationOption): number?;
 }
 
 declare module '@nuxt/types' {

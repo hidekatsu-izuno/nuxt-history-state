@@ -92,7 +92,7 @@ export default {
 
 ## API
 
-### $historyData
+### $historyState
 
 #### action
 
@@ -124,13 +124,14 @@ You can get a location of the specified page.
 
 You can get a history state in the specified page.
 
-#### find(location)
+#### findBackPosition(location)
 
-You can get the index of the first matched history, searching backward starting at the current page.
+You can get the relative position of the first matched history, 
+searching backward starting at the current page.
 If a history state is not found, this method will return null.
 
 ```javascript
-const delta = this.$historyState.find({
+const delta = this.$historyState.findBackPosition({
     name: 'test'
     // path: ...
     // fullPath: ...
