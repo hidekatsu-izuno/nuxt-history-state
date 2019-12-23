@@ -116,13 +116,9 @@ A backup data.
 
 A history length.
 
-#### getLocation(page)
+#### getItem(page)
 
-You can get a location of the specified page.
-
-#### getData(page)
-
-You can get a history state in the specified page.
+You can get a location and data of the specified page number.
 
 #### findBackPosition(location)
 
@@ -132,8 +128,8 @@ If a history state is not found, this method will return null.
 
 ```javascript
 const delta = this.$historyState.findBackPosition({
-    name: 'test'
-    // path: ...
+    path: 'test'
+    // name: ...
     // fullPath: ...
     // hash: ...
     // query: ...

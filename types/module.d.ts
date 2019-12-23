@@ -32,7 +32,7 @@ interface NuxtHistoryStateInstance {
     
     getItem(page: number): NuxtHistoryItem?;
 
-    findBackPosition(route: NuxtHistoryStateLocationOption): number?;
+    findBackPosition(location: NuxtHistoryStateLocationOption | string): number?;
 }
 
 declare module '@nuxt/types' {
