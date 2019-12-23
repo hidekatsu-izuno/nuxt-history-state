@@ -8,7 +8,7 @@ Nuxt.js module to backup or restore historical states
 
 ## Features
 
-- Get a last state when going forward or back.
+- Restore a last state after going forward or back.
 - Restore a state when reloading. (optional)
 
 ## Install
