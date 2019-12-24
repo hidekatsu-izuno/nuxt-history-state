@@ -10,10 +10,10 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "version.major": "standard-version --release-as major",
-    "version.minor": "standard-version --release-as minor",
-    "version.patch": "standard-version --release-as patch",
-    "release": "git push --follow-tags origin master && npm publish"
+    "release.major": "standard-version --release-as major",
+    "release.minor": "standard-version --release-as minor",
+    "release.patch": "standard-version --release-as patch",
+    "publish": "git push --follow-tags origin master && npm publish"
   },
   "repository": {
     "type": "git",
