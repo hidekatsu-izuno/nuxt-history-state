@@ -1,6 +1,6 @@
 {
   "name": "nuxt-history-state",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Nuxt.js module to backup or restore historical states",
   "main": "./lib/module.js",
   "types": "./types/module.d.ts",
@@ -10,10 +10,7 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release.major": "standard-version --release-as major",
-    "release.minor": "standard-version --release-as minor",
-    "release.patch": "standard-version --release-as patch",
-    "publish": "git push --follow-tags origin master && npm publish"
+    "release": "standard-version && git push --follow-tags origin master && npm publish"
   },
   "repository": {
     "type": "git",
