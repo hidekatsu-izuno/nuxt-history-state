@@ -119,6 +119,10 @@ A history length.
 
 You can get a location and data of the specified page number.
 
+#### getItems()
+
+You can get a list of item.
+
 #### findBackPosition(location)
 
 You can get the relative position of the first matched history, 

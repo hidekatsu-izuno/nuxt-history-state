@@ -9,7 +9,7 @@ interface NuxtHistoryStateLocation {
     meta?: any;
 }
 
-interface NuxtHistoryItem {
+interface NuxtHistoryStateItem {
     location: NuxtHistoryStateLocation;
     data?: any;
 }
@@ -30,9 +30,11 @@ interface NuxtHistoryStateInstance {
     readonly data: any;
     readonly length: number;
     
-    getItem(page: number): NuxtHistoryItem?;
+    getItem(page: number): NuxtHistoryStateItem | undefined;
 
-    findBackPosition(location: NuxtHistoryStateLocationOption | string): number?;
+    getItems(): NuxtHistoryStateItem[];
+
+    findBackPosition(location: NuxtHistoryStateLocationOption | string): number | null;
 }
 
 declare module '@nuxt/types' {
