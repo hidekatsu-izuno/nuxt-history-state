@@ -9,7 +9,7 @@
     "types/*.d.ts"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "release": "standard-version && git push --follow-tags origin master && npm publish"
   },
   "repository": {
@@ -23,8 +23,9 @@
   },
   "homepage": "https://github.com/hidekatsu-izuno/nuxt-history-state#readme",
   "devDependencies": {
+    "jest": "latest",
     "nuxt-edge": "latest",
-    "standard-version": "^7.0.1"
+    "standard-version": "latest"
   },
   "dependencies": {
     "fast-deep-equal": "^3.1.1",
