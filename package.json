@@ -23,9 +23,13 @@
   },
   "homepage": "https://github.com/hidekatsu-izuno/nuxt-history-state#readme",
   "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "babel-jest": "latest",
     "jest": "latest",
     "nuxt-edge": "latest",
-    "standard-version": "latest"
+    "standard-version": "latest",
+    "vue-jest": "^3.0.5"
   },
   "dependencies": {
     "fast-deep-equal": "^3.1.1",
