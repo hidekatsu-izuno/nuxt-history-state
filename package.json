@@ -25,11 +25,11 @@
   "devDependencies": {
     "@babel/core": "latest",
     "@babel/preset-env": "latest",
+    "@nuxtjs/module-test-utils": "latest",
     "babel-jest": "latest",
     "jest": "latest",
     "nuxt-edge": "latest",
-    "standard-version": "latest",
-    "vue-jest": "^3.0.5"
+    "standard-version": "latest"
   },
   "dependencies": {
     "fast-deep-equal": "^3.1.1",
