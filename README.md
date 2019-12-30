@@ -46,7 +46,9 @@ This module doesn't support reloading by default. If you set this option to true
 the state is saved in window.sessionStore and is restored from there when reloading. 
 However this module adds a parameter *_p* to url in return for it.
 
-This feature works correctly only on spa mode.
+Notice: This feature don't work correctly in a asyncData method on ssr.
+If you reload the browser, the backup state will overwrite the result of the asyncData. 
+Because the asyncData method is invoked on only the server side when reloading. 
 
 *Default:* false
 
