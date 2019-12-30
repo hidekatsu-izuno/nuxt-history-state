@@ -5,8 +5,6 @@
 
 Nuxt.js module to backup or restore historical states.
 
-Notice: this module is only active on spa mode.
-
 ## Features
 
 - Restore a last state after going forward or back.
@@ -26,9 +24,6 @@ npm install nuxt-history-state
 
 ```javascript
 module.exports = {
-    // this module is only active on spa (or universal's client) mode.
-    mode: 'spa',
-
     // enable a module
     modules: [
         'nuxt-history-state'
@@ -102,37 +97,52 @@ export default {
 
 A action type that caused a navigation.
 
-- new: When a new page is opened.
+- navigate: When a new page is navigated.
 - reload: When a page is reloaded.
 - push: When a pushState is called.
 - forward: When a forward navigation is occurred.
 - back: When a back navigation is occurred.
+- invalid: When a history stata is invalid.
+
+This method always returns 'navigate' on server.
 
 #### page
 
 A current page number (an integer beginning with 0).
 
+This method always returns 0 on server.
+
 #### data
 
 A backup data.
+
+This method always returns null on server.
 
 #### length
 
 A history length.
 
+This method cannot use on server.
+
 #### getItem(page)
 
 You can get a location and data of the specified page number.
 
+This method cannot use on server.
+
 #### getItems()
 
 You can get a list of item.
+
+This method cannot use on server.
 
 #### findBackPosition(location)
 
 You can get the relative position of the first matched history, 
 searching backward starting at the current page.
 If a history state is not found, this method will return null.
+
+This method cannot use on server.
 
 ```javascript
 const delta = this.$historyState.findBackPosition({
