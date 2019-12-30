@@ -46,6 +46,8 @@ This module doesn't support reloading by default. If you set this option to true
 the state is saved in window.sessionStore and is restored from there when reloading. 
 However this module adds a parameter *_p* to url in return for it.
 
+This feature works correctly only on spa mode.
+
 *Default:* false
 
 ## Usage
@@ -65,26 +67,23 @@ export default {
 
 ### Restore component data
 
-You can access to backup data through $historyState object.
+You can access to backup data through $historyState object of *this* or context.
 
 ```javascript
 export default {
-    // access to backup data in a asyncData or a fetch method
-    asyncData(context) {
-        const backupData = context.$historyState.data;
-        if (backupData) {
-            return backupData;
+    // Access to backup data in a asyncData or fetch method.
+    async asyncData({ $historyState, $http }) {
+        if ($historyState.action === 'navigate') {
+            return await $http.$get(...);
         }
-        return ...;
+        return {};
     }
 
-    // access to backup data in lifecycle methods of the instance
+    // Access to backup data in lifecycle methods of the instance.
     data() {
-        const backupData = this.$historyState.data;
-        if (backupData) {
-            return backupData;
-        }
-        return ...;
+        return this.$historyState.data || {
+            ...
+        };
     }
 }
 ```
