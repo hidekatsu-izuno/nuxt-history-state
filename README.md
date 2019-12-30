@@ -3,7 +3,9 @@
 [![npm version](https://badge.fury.io/js/nuxt-history-state.svg)](https://badge.fury.io/js/nuxt-history-state)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-Nuxt.js module to backup or restore historical states
+Nuxt.js module to backup or restore historical states.
+
+Notice: this module is only active on spa mode.
 
 ## Features
 
@@ -24,6 +26,9 @@ npm install nuxt-history-state
 
 ```javascript
 module.exports = {
+    // this module is only active on spa (or universal's client) mode.
+    mode: 'spa',
+
     // enable a module
     modules: [
         'nuxt-history-state'
