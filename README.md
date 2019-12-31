@@ -7,8 +7,9 @@ Nuxt.js module to backup or restore historical states.
 
 ## Features
 
-- Restore a last state after going forward or back.
-- Restore a state when reloading. (optional)
+- Restore a last state when going forward or back.
+- Restore a state when reloading.
+- Restore a last state when going forward or back after reloading. (optional)
 
 ## Install
 
@@ -31,7 +32,7 @@ module.exports = {
 
     // set options (see below section)
     historyState: {
-        reloadable: true
+        reloadable: false // or true
     }
 }
 ```
@@ -47,10 +48,6 @@ This API does not work properly when goes back or forward after reloading.
 
 If you set this option to true, It adds a parameter *_p* to url instead of using 
 HTML5 History API state.
-
-Notice: This option don't work correctly in a asyncData method on ssr.
-If you reload the browser, the backup state will overwrite the result of the asyncData. 
-Because the asyncData method is invoked on only the server side when reloading. 
 
 *Default:* false
 
@@ -108,13 +105,20 @@ A action type that caused a navigation.
 - back: When a back navigation is occurred.
 - invalid: When a history stata is invalid.
 
-This method always returns 'navigate' on server.
+By default this method returns basically 'navigate' on server. 
+But many browsers send cache-control='maxage=0' when reloading.
+So it heuristically returns 'reload' then.
+
+If you set the reloadable option to true, it chooses 'navigate'
+or 'reload' by using *_p* parameter.
 
 #### page
 
 A current page number (an integer beginning with 0).
 
-This method always returns 0 on server.
+By defalut this method always returns 0 on server.
+If you set the reloadable option to true, it returns the currect
+page number by using *_p* parameter.
 
 #### data
 
