@@ -40,13 +40,15 @@ module.exports = {
 
 #### reloadable
 
-Indicates if history state can e seved or not.
+Indicates whether this module works properly after reloading.
 
-This module doesn't support reloading by default. If you set this option to true, 
-the state is saved in window.sessionStore and is restored from there when reloading. 
-However this module adds a parameter *_p* to url in return for it.
+It uses HTML5 History API state by default. And It does not fully support reloading. 
+This API does not work properly when goes back or forward after reloading. 
 
-Notice: This feature don't work correctly in a asyncData method on ssr.
+If you set this option to true, It adds a parameter *_p* to url instead of using 
+HTML5 History API state.
+
+Notice: This option don't work correctly in a asyncData method on ssr.
 If you reload the browser, the backup state will overwrite the result of the asyncData. 
 Because the asyncData method is invoked on only the server side when reloading. 
 
