@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.4](https://github.com/hidekatsu-izuno/nuxt-history-state/compare/v0.2.3...v0.2.4) (2019-12-31)
+
+
+### Features
+
+* Improve historyState action name ([05212d8](https://github.com/hidekatsu-izuno/nuxt-history-state/commit/05212d820f3720378363c146fd55e30cddd563dd))
+* Supports ssr mode ([603ab20](https://github.com/hidekatsu-izuno/nuxt-history-state/commit/603ab203212dac553556f1e6b72059a9488742e7))
+
+
+### Bug Fixes
+
+* Fix a bug about backupData func registration ([786c309](https://github.com/hidekatsu-izuno/nuxt-history-state/commit/786c309720a8f4a08f8704e33a1403ecc025126b))
+* Improve invalid status reports. ([1abd379](https://github.com/hidekatsu-izuno/nuxt-history-state/commit/1abd379946abf82cf5e57c2c330af46874a9a574))
+
 ### [0.2.3](https://github.com/hidekatsu-izuno/nuxt-history-state/compare/v0.2.2...v0.2.3) (2019-12-30)
 
 
