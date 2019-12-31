@@ -75,7 +75,8 @@ You can access to backup data through $historyState object of *this* or context.
 export default {
     // Access to backup data in a asyncData or fetch method.
     async asyncData({ $historyState, $http }) {
-        if ($historyState.action === 'navigate') {
+        // Overwrite value on a new page only
+        if ($historyState.action === 'navigate' || $historyState.action === 'push') {
             return await $http.$get(...);
         }
         return {};
@@ -100,7 +101,7 @@ A action type that caused a navigation.
 
 - navigate: When a new page is navigated.
 - reload: When a page is reloaded.
-- push: When a pushState is called.
+- push: When a history.push is called.
 - forward: When a forward navigation is occurred.
 - back: When a back navigation is occurred.
 - invalid: When a history stata is invalid.
