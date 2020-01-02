@@ -43,8 +43,8 @@ module.exports = {
 
 Indicates whether this module works properly after reloading.
 
-It uses HTML5 History API state by default. And It does not fully support reloading. 
-This API does not work properly when goes back or forward after reloading. 
+It uses HTML5 History API state by default. However It does not fully support reloading. 
+This API does not work properly when goes back or forward after reloading.
 
 If you set this option to true, It adds a parameter *_p* to url instead of using 
 HTML5 History API state.
@@ -107,9 +107,9 @@ A action type that caused a navigation.
 
 By default this method returns basically 'navigate' on server. 
 But many browsers send cache-control='maxage=0' when reloading.
-So it heuristically returns 'reload' then.
+It heuristically returns 'reload' then.
 
-If you set the reloadable option to true, it chooses 'navigate'
+If you set the reloadable option to true, it detects 'navigate'
 or 'reload' by using *_p* parameter.
 
 #### page
