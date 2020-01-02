@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.5](https://github.com/hidekatsu-izuno/nuxt-history-state/compare/v0.2.4...v0.2.5) (2020-01-02)
+
+
+### Features
+
+* Remove external packages ([9262bd7](https://github.com/hidekatsu-izuno/nuxt-history-state/commit/9262bd7b51148a24ae409774534b8654a447828a))
+* Support reloading on server ([89b9516](https://github.com/hidekatsu-izuno/nuxt-history-state/commit/89b95166a01d3c63b1302679ef5998aefea04e27))
+
+
+### Bug Fixes
+
+* Fix a bug when transit new page ([a9a8bf3](https://github.com/hidekatsu-izuno/nuxt-history-state/commit/a9a8bf3987f81089a2da30eadbe55cb534241b20))
+* Improve Invalid state reporting ([4e57bc3](https://github.com/hidekatsu-izuno/nuxt-history-state/commit/4e57bc378be74fdeb85693ecbf29b38434b1ae39))
+
 ### [0.2.4](https://github.com/hidekatsu-izuno/nuxt-history-state/compare/v0.2.3...v0.2.4) (2019-12-31)
 
 
