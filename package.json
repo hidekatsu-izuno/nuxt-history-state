@@ -29,7 +29,6 @@
     "nuxt-edge": "latest"
   },
   "dependencies": {
-    "lz-string": "^1.4.4",
-    "whatwg-url": "^7.1.0"
+    "lz-string": "^1.4.4"
   }
 }
