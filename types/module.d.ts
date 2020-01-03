@@ -5,8 +5,6 @@ interface NuxtHistoryStateLocation {
     hash: string;
     query: { [key: string]: (string | (string | null)[]) };
     params: { [key: string]: string };
-    fullPath: string;
-    meta?: any;
 }
 
 interface NuxtHistoryStateItem {
@@ -20,8 +18,6 @@ interface NuxtHistoryStateLocationOption {
     hash?: string;
     query?: { [key: string]: (string | (string | null)[]) };
     params?: { [key: string]: string };
-    fullPath?: string;
-    meta?: any;
 }
 
 interface NuxtHistoryStateInstance {
