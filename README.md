@@ -32,7 +32,8 @@ module.exports = {
 
     // set options (see below section)
     historyState: {
-        reloadable: false // or true
+        reloadable: false, // or true
+        overrideDefaultScrollBehavior: true // or false
     }
 }
 ```
@@ -50,6 +51,14 @@ If you set this option to true, It adds a parameter *_p* to url instead of using
 HTML5 History API state.
 
 *Default:* false
+
+#### overrideDefaultScrollBehavior
+
+Indicates whether this module override a default scroll behavior of the router.
+
+If you set this option to true, It manages a scroll behavior by using own saved position.
+
+*Default:* true
 
 ## Usage
 
