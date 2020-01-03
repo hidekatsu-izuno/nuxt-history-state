@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/hidekatsu-izuno/nuxt-history-state/compare/v0.2.5...v0.3.0) (2020-01-03)
+
+
+### Features
+
+* add overrideDefaultScrollBehavior option ([8011395](https://github.com/hidekatsu-izuno/nuxt-history-state/commit/8011395436c128acc5a7a9ecdd6213a2e60c1ded))
+
 ### [0.2.5](https://github.com/hidekatsu-izuno/nuxt-history-state/compare/v0.2.4...v0.2.5) (2020-01-02)
 
 
