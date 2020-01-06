@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.1](https://github.com/hidekatsu-izuno/nuxt-history-state/compare/v0.3.0...v0.3.1) (2020-01-06)
+
+
+### Bug Fixes
+
+* Fix a bug about pushState ([fda45c7](https://github.com/hidekatsu-izuno/nuxt-history-state/commit/fda45c70bc3e45d5c0f02e899cc2870c76986f21))
+* Fix a bug about types ([de43abc](https://github.com/hidekatsu-izuno/nuxt-history-state/commit/de43abc8f14ad2508822b2a934f892bf92d9fa88))
+
 ## [0.3.0](https://github.com/hidekatsu-izuno/nuxt-history-state/compare/v0.2.5...v0.3.0) (2020-01-03)
 
 
