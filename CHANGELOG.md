@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.3.4](https://github.com/hidekatsu-izuno/nuxt-history-state/compare/v0.3.3...v0.3.4) (2020-08-17)
 
+### Bug Fixes
+
+* Fix Third-party cookies blocked in iframe issue ([4121acb](https://github.com/hidekatsu-izuno/nuxt-history-state/commit/4121acbe231946b7b0e3ced33b078d83c9e0eaf5))
+
 ### [0.3.3](https://github.com/hidekatsu-izuno/nuxt-history-state/compare/v0.3.2...v0.3.3) (2020-04-07)
 
 ### [0.3.2](https://github.com/hidekatsu-izuno/nuxt-history-state/compare/v0.3.1...v0.3.2) (2020-01-07)
