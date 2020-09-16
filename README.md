@@ -33,7 +33,8 @@ module.exports = {
     // set options (see below section)
     historyState: {
         reloadable: false, // or true
-        overrideDefaultScrollBehavior: true // or false
+        overrideDefaultScrollBehavior: true, // or false
+        scrollingElements: '#scroll' // or any selector
     }
 }
 ```
@@ -47,7 +48,7 @@ Indicates whether this module works properly after reloading.
 It uses HTML5 History API state by default. However It does not fully support reloading. 
 This API does not work properly when goes back or forward after reloading.
 
-If you set this option to true, It adds a parameter *_p* to url instead of using 
+If you set this option to true, it adds a parameter *_p* to url instead of using 
 HTML5 History API state.
 
 *Default:* false
@@ -56,9 +57,17 @@ HTML5 History API state.
 
 Indicates whether this module override a default scroll behavior of the router.
 
-If you set this option to true, It manages a scroll behavior by using own saved position.
+If you set this option to true, it manages a scroll behavior by using own saved position.
 
 *Default:* true
+
+#### scrollingElements
+
+Indicates to which element the overrode behavior is applied.
+
+If you set this option to a selecter, it applies the scrolling to the selector, in addition to the window.
+
+*Default:* null
 
 ## Usage
 
@@ -153,11 +162,13 @@ You can get a list of item.
 
 This method cannot use on server.
 
-#### findBackPosition(location)
+#### findBackPosition(location, partial = false)
 
 You can get the relative position of the first matched history, 
 searching backward starting at the current page.
 If a history state is not found, this method will return null.
+
+If the partial option sets true, it matches any subset of the location.
 
 This method cannot use on server.
 

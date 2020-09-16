@@ -32,6 +32,7 @@
     "nuxt-edge": "latest"
   },
   "dependencies": {
+    "css.escape": "^1.5.1",
     "lz-string": "^1.4.4"
   }
 }
