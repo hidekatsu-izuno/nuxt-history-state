@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.1](https://github.com/hidekatsu-izuno/nuxt-history-state/compare/v0.4.0...v0.4.1) (2020-09-16)
+
+
+### Features
+
+* Add a partial parameter to findBackPosition method ([0dbdf5a](https://github.com/hidekatsu-izuno/nuxt-history-state/commit/0dbdf5aa418fa01642a4bdbdfbe7d5bc4ae26184))
+* Add a scrollingElements option ([bdfc9a6](https://github.com/hidekatsu-izuno/nuxt-history-state/commit/bdfc9a618693cd53fb0a92f92cff3ae5ed4f9862))
+
 ## [0.4.0](https://github.com/hidekatsu-izuno/nuxt-history-state/compare/v0.3.4...v0.4.0) (2020-08-19)
 
 
