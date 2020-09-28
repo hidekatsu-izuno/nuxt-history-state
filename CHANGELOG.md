@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.4.2](https://github.com/hidekatsu-izuno/nuxt-history-state/compare/v0.4.1...v0.4.2) (2020-09-28)
 
+### Features
+
+* Add a removeItem method.
+
 ### [0.4.1](https://github.com/hidekatsu-izuno/nuxt-history-state/compare/v0.4.0...v0.4.1) (2020-09-16)
 
 
