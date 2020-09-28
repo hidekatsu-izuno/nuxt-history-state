@@ -185,6 +185,12 @@ if (delta != null) {
 }
 ```
 
+#### removeItem(page)
+
+You can remove a location and data of the specified page number.
+
+This method cannot use on server.
+
 ## License
 
 [MIT License](./LICENSE)
