@@ -1,6 +1,6 @@
 {
   "name": "nuxt-history-state",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Nuxt.js module to backup or restore historical states",
   "main": "./lib/module.js",
   "types": "./types/module.d.ts",
@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "css.escape": "^1.5.1",
+    "cssesc": "^3.0.0",
     "lz-string": "^1.4.4"
   }
 }
