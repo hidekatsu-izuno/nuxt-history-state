@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.3](https://github.com/hidekatsu-izuno/nuxt-history-state/compare/v0.4.2...v0.4.3) (2020-09-29)
+
+
+### Bug Fixes
+
+* removeItem must not clear location ([71f18f7](https://github.com/hidekatsu-izuno/nuxt-history-state/commit/71f18f7a9848f43b6a204379871bad1069b17047))
+
 ### [0.4.2](https://github.com/hidekatsu-izuno/nuxt-history-state/compare/v0.4.1...v0.4.2) (2020-09-28)
 
 ### Features
