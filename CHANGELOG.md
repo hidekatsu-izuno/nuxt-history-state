@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.4](https://github.com/hidekatsu-izuno/nuxt-history-state/compare/v0.4.3...v0.4.4) (2020-10-18)
+
+
+### Bug Fixes
+
+* Improve a mismatch route behavior. ([e594fdd](https://github.com/hidekatsu-izuno/nuxt-history-state/commit/e594fdd610804d43a511537c4eb04647f91787e9))
+* Improve back/forward behavior after navi. ([bb664d3](https://github.com/hidekatsu-izuno/nuxt-history-state/commit/bb664d30b60ad051b52f1932dea28a8503f7fd99))
+
 ### [0.4.3](https://github.com/hidekatsu-izuno/nuxt-history-state/compare/v0.4.2...v0.4.3) (2020-09-29)
 
 
