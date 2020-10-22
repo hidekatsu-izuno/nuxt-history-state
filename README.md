@@ -194,9 +194,9 @@ if (delta != null) {
 }
 ```
 
-#### removeItem(page)
+#### clearItemData(page)
 
-You can remove a location and data of the specified page number.
+You can clear a data of the specified page number. And it returns the previous data.
 
 This method cannot use on server.
 
