@@ -32,6 +32,7 @@ module.exports = {
 
     // set options (see below section)
     historyState: {
+        maxHistoryLength: 50, // or any positive integer
         reloadable: false, // or true
         overrideDefaultScrollBehavior: true, // or false
         scrollingElements: '#scroll' // or any selector
@@ -40,6 +41,14 @@ module.exports = {
 ```
 
 ### Options
+
+#### maxHistoryLength
+
+Sets the maximum length of the hisotry that can hold data.
+
+When this option not set, it is unlimited.
+
+*Default:* unlimited
 
 #### reloadable
 
