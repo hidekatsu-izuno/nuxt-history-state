@@ -44,11 +44,11 @@ module.exports = {
 
 #### maxHistoryLength
 
-Sets the maximum length of the hisotry that can hold data.
+Sets the maximum length of hisotries that can hold data.
 
-When this option not set, it is unlimited.
+When this option is not set, it is unlimited.
 
-*Default:* unlimited
+*Default:* undefined (unlimited)
 
 #### reloadable
 
