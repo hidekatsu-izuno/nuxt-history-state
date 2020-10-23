@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/hidekatsu-izuno/nuxt-history-state/compare/v0.4.4...v0.5.0) (2020-10-23)
+
+
+### Features
+
+* Add a maxHistoryLength option ([d251ffb](https://github.com/hidekatsu-izuno/nuxt-history-state/commit/d251ffbe22bdf358fb1d5838ccd899a8e76103d9))
+* Deprecate removeItem and added clearItemData ([5915353](https://github.com/hidekatsu-izuno/nuxt-history-state/commit/59153539599f3361e0213c1d963adc9f4b355636))
+
 ### [0.4.4](https://github.com/hidekatsu-izuno/nuxt-history-state/compare/v0.4.3...v0.4.4) (2020-10-18)
 
 
