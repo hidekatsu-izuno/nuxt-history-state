@@ -25,6 +25,7 @@
     "url": "https://github.com/hidekatsu-izuno/nuxt-history-state/issues"
   },
   "homepage": "https://github.com/hidekatsu-izuno/nuxt-history-state#readme",
+  "keywords": ["vue", "nuxt", "history"],
   "devDependencies": {
     "@nuxtjs/module-test-utils": "latest",
     "jest": "latest",
