@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.1](https://github.com/hidekatsu-izuno/nuxt-history-state/compare/v0.6.0...v0.6.1) (2021-03-10)
+
+
+### Bug Fixes
+
+* [#8](https://github.com/hidekatsu-izuno/nuxt-history-state/issues/8) ([17991e7](https://github.com/hidekatsu-izuno/nuxt-history-state/commit/17991e7be3e2f5195f74cdd2067b59495c7289f8))
+
 ## [0.6.0](https://github.com/hidekatsu-izuno/nuxt-history-state/compare/v0.5.0...v0.6.0) (2020-12-22)
 
 
