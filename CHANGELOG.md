@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.2](https://github.com/hidekatsu-izuno/nuxt-history-state/compare/v0.6.1...v0.6.2) (2021-03-28)
+
+
+### Bug Fixes
+
+* Error message sometimes appear on the console on IE11 [#10](https://github.com/hidekatsu-izuno/nuxt-history-state/issues/10) ([478e5af](https://github.com/hidekatsu-izuno/nuxt-history-state/commit/478e5afa1e58e529267d5292391281fe48d4c0cf))
+
 ### [0.6.1](https://github.com/hidekatsu-izuno/nuxt-history-state/compare/v0.6.0...v0.6.1) (2021-03-10)
 
 
