@@ -1,15 +1,21 @@
-# History State Module for Nuxt.js 
+# History State Module for Nuxt.js v2.x
 
 [![npm version](https://badge.fury.io/js/nuxt-history-state.svg)](https://badge.fury.io/js/nuxt-history-state)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-Nuxt.js module to backup or restore historical states.
+Nuxt.js v2.x module to backup or restore historical states.
 
 ## Features
 
 - Restore a last state when going forward or back.
 - Restore a state when reloading.
 - Restore a last state when going forward or back after reloading. (optional)
+
+## Supported Vuersion
+
+- Nuxt 2.x
+
+If you want to work with Nuxt2, you need to use [vue-history-state](https://github.com/hidekatsu-izuno/vue-history-state).
 
 ## Install
 
