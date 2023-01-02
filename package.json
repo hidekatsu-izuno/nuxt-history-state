@@ -33,7 +33,7 @@
   "devDependencies": {
     "@nuxtjs/module-test-utils": "latest",
     "jest": "latest",
-    "nuxt": "^2.15.8",
+    "nuxt": "^3.0.0",
     "standard-version": "^9.5.0"
   },
   "dependencies": {
