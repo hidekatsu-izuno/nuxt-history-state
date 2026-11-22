@@ -9,7 +9,7 @@
     "types/*.d.ts"
   ],
   "scripts": {
-    "test": "jest",
+    "test": "node test/nuxt-history-state.test.js",
     "version.major": "standard-version --release-as major",
     "version.minor": "standard-version --release-as minor",
     "version.patch": "standard-version --release-as patch",
@@ -31,10 +31,16 @@
     "history"
   ],
   "devDependencies": {
-    "@nuxtjs/module-test-utils": "^1.6.0",
-    "jest": "^30.5.2",
     "nuxt": "^4.6.4",
     "standard-version": "^9.5.0"
+  },
+  "overrides": {
+    "archiver@8.0.0": {
+      "readdir-glob": "^4.0.0"
+    },
+    "minimatch@3": {
+      "brace-expansion": "^1.1.21"
+    }
   },
   "dependencies": {
     "css.escape": "^1.5.1",
