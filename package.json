@@ -31,14 +31,14 @@
     "history"
   ],
   "devDependencies": {
-    "@nuxtjs/module-test-utils": "latest",
-    "jest": "latest",
-    "nuxt": "^3.0.0",
+    "@nuxtjs/module-test-utils": "^1.6.0",
+    "jest": "^30.5.2",
+    "nuxt": "^4.6.4",
     "standard-version": "^9.5.0"
   },
   "dependencies": {
     "css.escape": "^1.5.1",
     "cssesc": "^3.0.0",
-    "lz-string": "^1.4.4"
+    "lz-string": "^1.5.0"
   }
 }
