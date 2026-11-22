@@ -1,7 +1,9 @@
-const assert = require('node:assert/strict');
-const { readFile } = require('node:fs/promises');
-const path = require('node:path');
-const test = require('node:test');
+import { readFile } from 'node:fs/promises';
+import { createRequire } from 'node:module';
+import { basename } from 'node:path';
+import { expect, test } from 'vite-plus/test';
+
+const require = createRequire(import.meta.url);
 const historyStateModule = require('..');
 
 function registerPlugins(moduleOptions) {
@@ -18,16 +20,16 @@ function registerPlugins(moduleOptions) {
 test('registers the Nuxt server and client plugins', () => {
     const plugins = registerPlugins({ reloadable: true });
 
-    assert.deepEqual(plugins.map(({ src, fileName, mode }) => ({
-        src: path.basename(src),
+    expect(plugins.map(({ src, fileName, mode }) => ({
+        src: basename(src),
         fileName,
         mode
-    })), [
+    }))).toEqual([
         { src: 'plugin.server.js', fileName: 'history-state.server.js', mode: 'server' },
         { src: 'plugin.client.js', fileName: 'history-state.client.js', mode: 'client' }
     ]);
     for (const plugin of plugins) {
-        assert.equal(plugin.options.reloadable, true);
+        expect(plugin.options.reloadable).toBe(true);
     }
 });
 
@@ -41,7 +43,7 @@ test('restores the page number from a reloadable URL on the server', async () =>
 
     initialize(context, (name, state) => injections.push([name, state]));
 
-    assert.deepEqual(injections, [['historyState', context.$historyState]]);
-    assert.equal(context.$historyState.action, 'reload');
-    assert.equal(context.$historyState.page, 2);
+    expect(injections).toEqual([['historyState', context.$historyState]]);
+    expect(context.$historyState.action).toBe('reload');
+    expect(context.$historyState.page).toBe(2);
 });

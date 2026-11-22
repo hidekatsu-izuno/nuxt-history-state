@@ -9,7 +9,8 @@
     "types/*.d.ts"
   ],
   "scripts": {
-    "test": "node test/nuxt-history-state.test.js",
+    "test": "vp test",
+    "build": "vp pack",
     "version.major": "standard-version --release-as major",
     "version.minor": "standard-version --release-as minor",
     "version.patch": "standard-version --release-as patch",
@@ -32,7 +33,8 @@
   ],
   "devDependencies": {
     "nuxt": "^4.6.4",
-    "standard-version": "^9.5.0"
+    "standard-version": "^9.5.0",
+    "vite-plus": "^1.7.0"
   },
   "overrides": {
     "archiver@8.0.0": {

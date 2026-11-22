@@ -206,6 +206,20 @@ You can clear a data of the specified page number. And it returns the previous d
 
 This method cannot use on server.
 
+## Development
+
+Use Node.js `^22.18.0`, `^24.11.0`, or `>=26.0.0` for the Vite+ toolchain.
+
+```sh
+npm ci
+npm test
+npm run build
+```
+
+The build writes a CommonJS package to `dist/`, with the Nuxt 2 plugin templates
+and type declarations copied as-is. Run `npm pack ./dist` to create a tarball
+from the build output.
+
 ## License
 
 [MIT License](./LICENSE)
